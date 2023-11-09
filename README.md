@@ -1,16 +1,37 @@
-# weather_app
+# Weather App
 
-A new Flutter project.
+A Flutter application that provides real-time weather information using the OpenWeather API.
+
+## Features
+
+- Display current weather conditions
+- Hourly and daily weather forecasts
+- Location-based weather updates
+- Animated weather illustrations using Lottie
+- Beautiful typography with [Google Fonts](https://pub.dev/packages/google_fonts)
+- Internationalization (i18n) for multilingual support using [intl](https://pub.dev/packages/intl) package
+ 
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+### Prerequisites
 
-A few resources to get you started if this is your first Flutter project:
+- Flutter installed on your machine
+- OpenWeather API key (sign up [here](https://openweathermap.org/api) if you don't have one)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### Installation
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/your_username/weather_app.git
+2. cd weather_app
+
+3. flutter pub get
+
+### Dependencies
+
+    Google Fonts
+    Lottie
+    intl
+
