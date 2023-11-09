@@ -29,6 +29,14 @@ A Flutter application that provides real-time weather information using the Open
 
 3. flutter pub get
 
+4. ### Configuration
+## OpenWeather API
+
+Ensure you have a valid OpenWeather API key. You can obtain one by signing up here. Add your API key to the .env file.
+
+OPENWEATHER_API_KEY=your_api_key_here
+
+
 ### Dependencies
 
     Google Fonts
