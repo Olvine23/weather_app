@@ -1,3 +1,5 @@
+import 'package:intl/intl.dart';
+
 class HelperFn{
   String getWeatherAnimation(String? mainCondition){
     if(mainCondition == null) return 'assets/sunny.json';
@@ -26,5 +28,11 @@ class HelperFn{
     }
 
   }
+
+  String getReadableTime(int timestamp) {
+  var date = DateTime.fromMillisecondsSinceEpoch(timestamp * 1000);
+  var formattedTime = DateFormat.jm().format(date);
+  return formattedTime;
+}
 
 }

@@ -1,3 +1,4 @@
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:get/get.dart';
 import 'package:weather_app/models/location_model.dart';
 import 'dart:convert' as convert;
@@ -5,7 +6,7 @@ import 'package:http/http.dart' as http;
 import 'package:weather_app/models/weather_model.dart';
 
 class WeatherRepository {
-  final apiKey = '710d9ad0009e86d5d6c19b59b1c6c86c';
+  final apiKey = dotenv.env['OPENWEATHER_API_KEY'] ?? "";
   Future<LocationData?> getCurrentLocation() async {
     LocationData? locationData;
     // Time consuming operation. We have to wait for the server's response.

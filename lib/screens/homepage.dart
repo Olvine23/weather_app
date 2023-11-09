@@ -68,8 +68,9 @@ class HomePage extends StatelessWidget {
                     children: [
                       Obx(
                         () => Text(
-                          '📍 ${_controller.address},',
+                          '📍 ${_controller.address} ,',
                           style: const TextStyle(
+                            color: Colors.black54,
                               fontSize: 20, fontWeight: FontWeight.w700),
                         ),
                       ),
@@ -99,6 +100,7 @@ class HomePage extends StatelessWidget {
                           () => Text(
                             _controller.condition,
                             style: TextStyle(
+                              color: Colors.black54,
                                 fontSize: 25, fontWeight: FontWeight.w600),
                           ),
                         ),
@@ -111,7 +113,8 @@ class HomePage extends StatelessWidget {
                       )),
                       Expanded(child: Card(child: Padding(
                         padding:  EdgeInsets.all(8.0),
-                        child: ListTile(title: Text(_controller.description!)),
+                        child: ListTile(title: Obx(() => Text(_controller.description!, style: TextStyle(fontSize: 18, fontWeight: FontWeight.w700)
+                        ,))),
                       ),))
                     ],
                   ),
