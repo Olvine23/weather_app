@@ -75,7 +75,7 @@ class HomePage extends StatelessWidget {
                       ),
                       const SizedBox(height: 8),
                       const Text(
-                        'Hello Olvine',
+                        'Howdy There 👋 ',
                         style: TextStyle(
                             fontSize: 25, fontWeight: FontWeight.bold),
                       ),
@@ -108,7 +108,11 @@ class HomePage extends StatelessWidget {
                       Obx(() => Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: Text(HelperFn().getResponseText(_controller.condition) , style: TextStyle(fontWeight: FontWeight.w700, fontSize: 18),),
-                      ))
+                      )),
+                      Expanded(child: Card(child: Padding(
+                        padding:  EdgeInsets.all(8.0),
+                        child: ListTile(title: Text(_controller.description!)),
+                      ),))
                     ],
                   ),
                 )

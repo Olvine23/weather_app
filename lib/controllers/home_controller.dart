@@ -14,9 +14,10 @@ class HomeController extends GetxController{
 
    Rxn<WeatherData> weatherData = Rxn();
 
-  // This will be retrieved by the UI for a pretty display.
+  // This will be retrieved by the UI for  display.
   String get name => "${weatherData.value?.cityName}";
   String get condition => "${weatherData.value?.minCondition}";
+  String? get description => "${weatherData.value?.description}";
   String get temperature => "${weatherData.value?.temperature}";
   String get address =>
       "${locationData.value?.regionName}, ${locationData.value?.country}";
