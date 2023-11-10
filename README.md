@@ -7,6 +7,7 @@ A Flutter application that provides real-time weather information using the Open
 - Display current weather conditions
 - Hourly and daily weather forecasts
 - Location-based weather updates
+- Used Getx for state management
 - Animated weather illustrations using Lottie
 - Beautiful typography with [Google Fonts](https://pub.dev/packages/google_fonts)
 - Internationalization (i18n) for multilingual support using [intl](https://pub.dev/packages/intl) package
@@ -36,10 +37,13 @@ Ensure you have a valid OpenWeather API key. You can obtain one by signing up he
 
 OPENWEATHER_API_KEY=your_api_key_here
 
+5. flutter run
+
 
 ### Dependencies
 
     Google Fonts
     Lottie
     intl
+    Get 
 
